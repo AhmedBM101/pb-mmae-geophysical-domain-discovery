@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript and this repository."
+title: "PB-MMAE Geophysical-Domain Discovery"
+version: 0.1.0
+date-released: 2026-10-07
+type: software
+repository-code: "https://github.com/AhmedBM101/pb-mmae-geophysical-domain-discovery"

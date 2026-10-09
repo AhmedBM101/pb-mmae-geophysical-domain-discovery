@@ -1,0 +1,17 @@
+# Preliminary notebook dependencies inferred from imports.
+# Exact versions will be locked after a clean end-to-end reproduction.
+numpy
+pandas
+scipy
+scikit-learn
+statsmodels
+matplotlib
+pillow
+rasterio
+pyproj
+tifffile
+minisom
+threadpoolctl
+torch
+ipykernel
+PyYAML

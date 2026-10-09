@@ -1,0 +1,27 @@
+# Canonical PB-MMAE paper configuration. Use authorised local data only.
+paths:
+  # Authorised local analysis tree containing 02_data and 03_outputs.
+  # It can be outside this repository; source data and generated outputs stay ignored.
+  project_root: .
+  # Contains 13x13/Fold_{1,2,4,5}/Fold{n}_TRAIN_13x13_14ch.npy
+  patch_root: 03_outputs/patches
+  # Generated models and tables; this directory is ignored by Git.
+  output_root: 03_outputs
+
+train:
+  patch_size: 13
+  evaluation_folds: [1, 2, 4, 5]
+  development_fold: 3
+  branch_embed_dim: 16
+  latent_dim: 64
+  spatial_mask_ratio: 0.40
+  modality_mask_probability: 0.30
+  smooth_l1_beta: 1.0
+  epochs: 300
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  base_seed: 42
+  checkpoint_every: 25
+  device: cpu
+  num_threads: 2
